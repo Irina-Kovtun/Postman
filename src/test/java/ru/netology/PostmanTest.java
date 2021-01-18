@@ -17,7 +17,7 @@ public class PostmanTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("files", equalTo("some data"))
+                .body("data", equalTo("some data"))
                 .contentType(ContentType.JSON);
     }
 }
